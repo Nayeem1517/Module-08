@@ -1,0 +1,40 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    height: 400px;
+    display: flex;
+    gap: 5px;
+    border: 10px solid aqua;
+
+}
+.row >div{
+    flex: 1;
+}
+
+.moon img{
+    height: 50%;
+  
+  
+}
+.banson{
+    height: 50%;
+    display: flex;
+    flex: 1;
+    gap: 2px;
+}
+.row > div{
+    flex: 1;
+}
+.hp{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2px;
+}
+@media(max-width:500px){
+    .row{
+        flex-direction: column;
+    }
+}
