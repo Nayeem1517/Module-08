@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning grid whit Nayeem</title>
+    <style>
+        .box {
+            border: 5px;
+            border-radius: 20px;
+            background-color: aqua;
+            padding: 5px;
+
+        }
+
+        .container {
+            display: flex;
+            gap: 25px;
+            margin: 10px;
+        }
+        .item{
+            background-color: pink;
+            border: 5px solid black;
+            gap: 10px;
+            flex-wrap: wrap;
+
+
+        }
+        .container-2{
+            display: flex;
+            gap: 10px;
+        }
+
+        @media (max-width:500px) {
+            .container {
+                flex-direction: column;
+            }
+            .container-2{
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h3>Flexible Flex</h3>
+    <div class="container">
+        <div class="box">
+            <h3>this is the box-01</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in facere assumenda expedita aliquid vero!
+            Earum vel iure aut, quasi tempora fugit inventore voluptatibus. Consequuntur repellat optio doloremque
+            accusamus inventore!
+        </div>
+
+        <div class="box">
+            <h3>this is the second box</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus totam earum deleniti, in architecto
+            iusto cumque quidem. Labore est ratione molestias blanditiis fugit aliquam magni placeat similique odit,
+            voluptatibus ipsam!
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deserunt, fuga totam quasi a fugiat natus rerum nostrum minus sint facilis iure, pariatur omnis ipsa, magnam et dignissimos! Consequatur, consequuntur.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos similique hic dignissimos exercitationem ab voluptas sit fugit numquam reprehenderit nemo voluptates magni nisi, incidunt odit, doloremque sint. Ut, incidunt excepturi?</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quia itaque ipsum perferendis aliquam alias, eum mollitia ducimus velit, accusantium amet molestias. Aspernatur atque quibusdam numquam, sint in deserunt illo?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quas fugiat iure neque animi non maiores rem facilis excepturi, sapiente vero voluptatibus! Ex saepe fuga voluptates sunt. Totam, asperiores corrupti!</div>
+    </div>
 </body>
+
 </html>
